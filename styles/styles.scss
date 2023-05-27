@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+  margin-top: 100px;
+}
+
+.content {
+  height: 5000px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .name {
+    margin-left: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    white-space: nowrap;
+  }
+
+  .container {
+    display: flex;
+    justify-content: right;
+    position: relative;
+    z-index: 999;
+  }
+
+  .hamburger {
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 999;
+
+    div {
+      border-bottom: 4px solid black;
+      width: 32px;
+    }
+  }
+
+  nav {
+    display: flex;
+    position: fixed;
+    z-index: 998;
+    padding-right: 8px;
+    top: 42px;
+    background-color: lightblue;
+    border-radius: 0 15px;
+    transform: scaleY(0);
+    transition: transform 0.7s;
+    transform-origin: top;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px;
+      margin: 0;
+
+      .navlink {
+        list-style: none;
+        font-weight: bold;
+        opacity: 0;
+        transition-delay: 0.5s 0.2s;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            color: white;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  header {
+    justify-content: space-around;
+
+    .name {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .container {
+      display: flex;
+      justify-content: left;
+    }
+
+    nav {
+      position: relative;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+
+        li {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
