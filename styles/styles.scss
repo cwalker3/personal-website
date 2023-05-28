@@ -14,6 +14,7 @@
 
 body {
   margin-top: 50px;
+  background-color: var(--bg-color-primary);
 }
 
 header {
@@ -120,7 +121,7 @@ header {
     align-items: center;
 
     img {
-      width: 40%;
+      width: min(40%, 400px);
       border-radius: 20px;
       border: 2px solid black;
     }
