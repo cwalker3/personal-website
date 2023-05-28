@@ -21,7 +21,10 @@ function toggleNavScale() {
 }
 
 function toggleNavLinksOpacity() {
-  if (window.getComputedStyle(navlinks[1]).opacity == '0') {
+  if (
+    window.getComputedStyle(nav).transform ==
+    'matrix(1, 0, 0, 0, 0, 0)'
+  ) {
     navlinks.forEach((navlink) => (navlink.style.opacity = '1'));
   } else {
     navlinks.forEach((navlink) => (navlink.style.opacity = '0'));

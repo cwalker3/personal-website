@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/styles/normalize.css">
   <link rel="stylesheet" href="/styles/styles.css">
   <script src="scripts/script.js" defer></script>
-  <title>Document</title>
+  <title>Cory Walker Contact Page</title>
 </head>
 <body>
   <header>
@@ -22,13 +22,31 @@
       </div>
       <nav>
         <ul>
-          <li class="navlink"><a href="">About</a></li>
-          <li class="navlink"><a href="">Projects</a></li>
-          <li class="navlink"><a href="">Contact</a></li>
+          <li class="navlink"><a href="/index.html">About</a></li>
+          <li class="navlink"><a href="/projects.html">Projects</a></li>
+          <li class="navlink"><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <main class="contact-page">
+    <h1>Contact</h1>
+    <div class="contact-links">
+
+    </div>
+    <form action="https://formspree.io/f/myyaabge" method="POST">
+      <div class="field">
+        <label for="email">Your email:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="field">
+        <label for="message">Your message:</label>
+        <textarea name="message" id="message"></textarea>
+      </div>
+      <input type="submit" value="Contact Me">
+    </form>
+  </main>
   
 </body>
 </html>
