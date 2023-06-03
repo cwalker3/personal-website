@@ -127,11 +127,13 @@ header nav ul .navlink a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 8px;
 }
 .about-page .logos {
   display: flex;
   gap: 8px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .about-page .logos img {
   max-height: 75px;

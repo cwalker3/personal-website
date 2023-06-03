@@ -140,12 +140,14 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8px;
   }
 
   .logos {
     display: flex;
     gap: 8px;
     align-items: center;
+    flex-wrap: wrap;
 
     img {
       max-height: 75px;
